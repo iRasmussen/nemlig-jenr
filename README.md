@@ -1,10 +1,16 @@
 # nemlig-jenr
 
-Eksempelprojekt til undervisning i webteknologier på 2. semester – Økonomi & IT, Erhvervsakademi København.
+Eksempelprojekt til undervisning i webteknologier på 2. semester
+Professionsbachelor i Økonomi & IT
+Erhvervsakademi København
 
 Formålet med projektet er at vise en trinvis udvikling fra en statisk webside til en simpel webapplikation med klar adskillelse mellem præsentation, logik og data.
 
-## Versioner
+Projektet udvikler sig i små versioner, hvor hvert trin introducerer nye teknologier og arkitektoniske principper.
+
+---
+
+# Versioner
 
 | version | indhold                   |
 | ------- | ------------------------- |
@@ -14,12 +20,16 @@ Formålet med projektet er at vise en trinvis udvikling fra en statisk webside t
 
 Senere versioner udvider projektet med database og fuld trelagsarkitektur.
 
-## Struktur
+Alle versioner kan hentes via **GitHub Releases**, så hver fase i udviklingen kan afprøves separat.
+
+---
+
+# Udviklingsprogression
 
 Projektet udvikler sig gradvist efter følgende model:
 
 ```
-HTML
+statisk HTML
 → Python webserver
 → templates
 → database
@@ -28,14 +38,54 @@ HTML
 Dette svarer til en klassisk trelagsstruktur:
 
 ```
-UI (HTML/CSS)
+Præsentation
+HTML + CSS
+
 ↓
-Logik (Python / Flask)
+Applikationslogik
+Python / Flask
+
 ↓
-Data (database)
+Data
+SQL-database
 ```
 
-## Anvendelse i undervisning
+---
+
+# Projektstruktur
+
+Projektets struktur vil gradvist udvikle sig til noget i denne retning:
+
+```
+nemlig-jenr
+│
+index.html
+webserver.py
+│
+templates/
+static/
+│
+db/
+schema.sql
+demo_data.sql
+```
+
+Formålet er at tydeliggøre adskillelsen mellem:
+
+```
+UI
+HTML / CSS
+
+Logik
+Python / Flask
+
+Data
+database
+```
+
+---
+
+# Anvendelse i undervisning
 
 Projektet bruges i undervisningen på 2. semester til at demonstrere:
 
@@ -44,4 +94,16 @@ Projektet bruges i undervisningen på 2. semester til at demonstrere:
 * separation mellem præsentation og logik
 * introduktion til databaseintegration
 
-Studerende kan hente specifikke versioner via **GitHub Releases** for at afprøve hvert trin i udviklingen.
+Studerende kan hente specifikke versioner via **GitHub Releases** og afprøve hvert trin i udviklingen lokalt.
+
+---
+
+# Om versionernes README
+
+Hver version i *Releases* indeholder sin egen README, som forklarer:
+
+* hvordan versionen startes
+* hvilke krav der er til Python og pakker
+* hvilke filer der indgår i versionen
+
+Repository-README'en beskriver derimod projektets samlede idé og udviklingsforløb.
