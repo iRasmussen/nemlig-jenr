@@ -2,7 +2,6 @@
 
 Eksempelprojekt til undervisning i webteknologier.
 
-
 2. semester – Økonomi & IT
 
 Erhvervsakademi København
