@@ -1,7 +1,10 @@
 # nemlig-jenr
 
 Eksempelprojekt til undervisning i webteknologier.
+
+
 2. semester – Økonomi & IT
+
 Erhvervsakademi København
 
 Formålet med projektet er at vise en trinvis udvikling fra en statisk webside til en simpel webapplikation med klar adskillelse mellem præsentation, logik og data.
